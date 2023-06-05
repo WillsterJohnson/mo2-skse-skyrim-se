@@ -1,0 +1,5 @@
+#!/bin/bash
+STEAM_COMPAT_CLIENT_INSTALL_PATH=/usr/bin/steam \
+STEAM_COMPAT_DATA_PATH=/PATH/TO/steamapps/compatdata/489830 \
+/PATH/TO/steamapps/common/Proton\ 8.0/proton run \
+/PATH/TO/steamapps/compatdata/489830/pfx/drive_c/users/steamuser/Desktop/<NAME>.lnk

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=SKSE64
+Comment=Launch SKSE64 TESV SSE with MO2
+Exec=skse64
+Icon=steam
+Terminal=false
+Type=Application
+Categories=Game;

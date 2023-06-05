@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=ModOrganizer2
+Comment=Launch ModOrganizer2
+Exec=mo2
+Icon=steam
+Terminal=true
+Type=Application
+Categories=Game;

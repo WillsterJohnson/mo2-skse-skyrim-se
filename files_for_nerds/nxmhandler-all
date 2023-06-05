@@ -1,0 +1,18 @@
+#!/bin/bash
+file=$1
+if [[ -z $file ]]; then
+    echo "Usage: $0 <filepath>.nxmuri"
+    exit 1
+fi
+file_content=$(cat "$file")
+list=$(echo "$file_content" | sed -e 's/#.*$//' | sed -e '/^$/d')
+total=$(echo "$list" | wc -l)
+echo "Total: $total"
+echo "List:"
+echo "$list"
+count=1
+while IFS= read -r nxmuri; do
+        echo "$count/$total ($nxmuri)"
+        count=$((count+1))
+        nxmhandler "$nxmuri"
+done <<< "$list"

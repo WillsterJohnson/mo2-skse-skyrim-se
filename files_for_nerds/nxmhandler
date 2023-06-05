@@ -1,0 +1,13 @@
+#!/bin/bash
+# #####
+# Requires FireFox
+# visit `about:config`
+# set `network.protocol-handler.expose.nxm` to `false`
+# try to donload a mod with mod manager from Nexus
+# set this script as the handler for `nxm` protocol URIs
+# be sure to check `do not ask again`
+# #####
+STEAM_COMPAT_CLIENT_INSTALL_PATH=/usr/bin/steam \
+STEAM_COMPAT_DATA_PATH=/PATH/TO/steamapps/compatdata/489830 \
+/PATH/TO/steamapps/common/Proton\ 8.0/proton run \
+/PATH/TO/steamapps/compatdata/489830/pfx/drive_c/Modding/MO2/nxmhandler.exe "$1"
