@@ -421,6 +421,9 @@ You now have instant access to both Mod Organizer 2 and your Modded Skyrim via S
 applications menu, and you can now automatically download mods from Nexus using the `nxmhandler`
 script we created.
 
+You should check out the [extra info page](./extra_info.md) for some additional information on
+what can and can't be done with this setup.
+
 ## Next Steps
 
 Head over to [the Skyrim Special Edition Nexus mods page](https://www.nexusmods.com/skyrimspecialedition/)
