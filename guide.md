@@ -177,7 +177,7 @@ In FireFox, paste `aboute:config` in the address bar.
 Once there, enter `network.protocol-handler.expose.nxm` in the search bar on the page.
 
 Check the "Boolean" option, then click the "+" icon to the right. Ensure that the text in the centre
-reads "false".
+reads "false". If it reads "true", click the arrows on the right to change it to "false".
 
 ### Create `nxmhandler` Script
 
@@ -256,18 +256,30 @@ _[IMPORTANT WARNING - READ BEFORE YOU RUN ANY COMMANDS](./terminal_safety.md)_
 sudo chmod 755 /usr/local/bin/nxmhandler-all
 ```
 
-## Launch Mod Organizer 2
+### Connect `nxmhandler` to FireFox
 
-If you have done everything correctly up to this point, you will be able to launch MO2 from your
-applications list.
+In FireFox, open [the Skyrim SE Nexus page](https://www.nexusmods.com/skyrimspecialedition/) and
+select any mod. Don't worry about picking one you want, this one will be removed shortly and is only
+to finish this setup.
 
-If you're unable to do this, you may have missed a step, or your distro may not automatically
-refresh it's `.desktop` file listings. Try logging out an back in to your user account, or
-restarting your computer.
-If this does not work, be sure that you have run the `sudo chmod` commands, and that you have
-created the `mo2` file and `mo2.desktop` file in the correct locations.
+Make sure you have MO2 open.
 
-Any further issues may be discussed in the [discussions tab](https://github.com/WillsterJohnson/mo2-skse-skyrim-se/discussions).
+On the Nexus page for a mod, select the "files" tab, then select "mod manager download". If there is
+only a "manual download", try a different mod.
+
+Select "slow download" on the next page, wait for the countdown, then click "click here" to download
+manually.
+
+FireFox should prompt you askign what it should do. Check "always use this application to open nxm
+links", then click "choose...".
+
+Navigate to `/usr/local/bin/` and select `nxmhandler`, then click "open".
+
+Finally, select "open link". This will launch MO2 and begin downloading the mod. You can select the
+"downloads" tab on the right, then right-click the mod and select "delete" to remove it.
+
+From now on, any "mod manager download" buttons clicked on Nexus will launch MO2 if it isn't already
+open and begin downloading the mod.
 
 ## Install SKSE
 
