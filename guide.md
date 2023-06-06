@@ -386,6 +386,23 @@ Categories=Game;
 Now check your applications list. You should see an entry for SKSE64, and clicking it should launch
 Skyrim SKSE64 via MO2. Until mods are installed however, it can be difficult to verify.
 
+## Add `SKSE` and `ModOrganizer2` to your Steam Library
+
+This step is optional. You may wish to do this for convenience or to take advantage of the features
+and functionality Steam can provide to non-Steam games.
+
+You can follow [Steam's own guide](https://help.steampowered.com/en/faqs/view/4B8B-9697-2338-40EC)
+on how to do this - it's all done through the Steam app and is relatively simple.
+
+In the top-right, click "games", then select "add a non-Steam game to my library".
+
+Scroll down the list to find and select both "ModOrganizer2" and "SKSE".
+
+If they don't appear in the listing, check that they show up in your applications list. If they do
+show in your applications list, but not in Steam's list, you may need to restart Steam. As a final
+step, you can select "browse" and navigate to `/home/<your name>/.local/share/applications/` and
+select the `.desktop` files created in previous steps.
+
 ## Complete
 
 You now have instant access to both Mod Organizer 2 and your Modded Skyrim via SKSE from your
