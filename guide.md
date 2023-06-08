@@ -172,7 +172,7 @@ package management tool.
 
 ### Configure FireFox
 
-In FireFox, paste `aboute:config` in the address bar.
+In FireFox, paste `about:config` in the address bar.
 
 Once there, enter `network.protocol-handler.expose.nxm` in the search bar on the page.
 
